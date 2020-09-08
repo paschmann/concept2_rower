@@ -2,8 +2,7 @@
 
 This is a small POC/Sample application which allows you to connect to a PM5 via bluetooth from a iOS device and receive realtime data from the Concept 2. The original framework included in this repo is based on a fork of the 5 year old <a href='https://github.com/BoutFitness/Concept2-SDK'>Concept2-SDK</a> which I ported to Swift 5.
 
-<img src='Resources/Screenshot1.png' width='200px' style='margin: 50px;'>
-<img src='Resources/Screenshot2.png' width='200px' style='margin: 50px;'>
+<img src='Resources/Screenshot1.png' width='200px' style='margin: 50px;'><img src='Resources/Screenshot2.png' width='200px' style='margin: 50px;'>
 
 ## Usage
 

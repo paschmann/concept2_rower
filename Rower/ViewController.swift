@@ -105,7 +105,7 @@ class ViewController: UIViewController {
         if segue.identifier == "PresentPerformanceMonitor" {
             if let pm = sender as? PerformanceMonitor {
                 if let vc = segue.destination as? PerformanceMonitorViewController {
-                    vc.performanceMonitor = pm
+                    vc.concept2monitor = pm
                 }
             }
         }

@@ -189,7 +189,7 @@
 		230322D324FEB56800F60ABB /* Rower */ = {
 			isa = PBXGroup;
 			children = (
-				2303230424FEBA1E00F60ABB /* Classes */,
+				2303230424FEBA1E00F60ABB /* Concept2-SDK */,
 				230322D424FEB56800F60ABB /* AppDelegate.swift */,
 				230322D624FEB56800F60ABB /* SceneDelegate.swift */,
 				2336833624FFE6F500A92917 /* ViewController.swift */,
@@ -220,7 +220,7 @@
 			path = RowerUITests;
 			sourceTree = "<group>";
 		};
-		2303230424FEBA1E00F60ABB /* Classes */ = {
+		2303230424FEBA1E00F60ABB /* Concept2-SDK */ = {
 			isa = PBXGroup;
 			children = (
 				2303230524FEBA1E00F60ABB /* Enumerations */,
@@ -234,7 +234,7 @@
 				2303232D24FEBA1E00F60ABB /* Subject.swift */,
 				2303233124FEBA1E00F60ABB /* Types.swift */,
 			);
-			path = Classes;
+			path = "Concept2-SDK";
 			sourceTree = "<group>";
 		};
 		2303230524FEBA1E00F60ABB /* Enumerations */ = {

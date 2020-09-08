@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "PerformanceMonitorViewController.updateUI():PerformanceMonitorViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "performanceMonitor">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "BluetoothManager.connectPerformanceMonitor(performanceMonitor:):BluetoothManager.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "performanceMonitor.peripheral">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ViewController.tableView(_:didSelectRowAt:):ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "performanceMonitors">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

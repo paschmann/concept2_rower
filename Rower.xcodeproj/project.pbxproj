@@ -1,0 +1,825 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		230322D524FEB56800F60ABB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230322D424FEB56800F60ABB /* AppDelegate.swift */; };
+		230322D724FEB56800F60ABB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230322D624FEB56800F60ABB /* SceneDelegate.swift */; };
+		230322DE24FEB56A00F60ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 230322DD24FEB56A00F60ABB /* Assets.xcassets */; };
+		230322E124FEB56A00F60ABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 230322DF24FEB56A00F60ABB /* LaunchScreen.storyboard */; };
+		230322EC24FEB56A00F60ABB /* RowerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230322EB24FEB56A00F60ABB /* RowerTests.swift */; };
+		230322F724FEB56A00F60ABB /* RowerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230322F624FEB56A00F60ABB /* RowerUITests.swift */; };
+		2303233B24FEBA1E00F60ABB /* IntervalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303230624FEBA1E00F60ABB /* IntervalType.swift */; };
+		2303233C24FEBA1E00F60ABB /* WorkoutDurationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303230724FEBA1E00F60ABB /* WorkoutDurationType.swift */; };
+		2303233D24FEBA1E00F60ABB /* RowingStatusSampleRateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303230824FEBA1E00F60ABB /* RowingStatusSampleRateType.swift */; };
+		2303233E24FEBA1E00F60ABB /* StrokeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303230924FEBA1E00F60ABB /* StrokeState.swift */; };
+		2303233F24FEBA1E00F60ABB /* WorkoutState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303230A24FEBA1E00F60ABB /* WorkoutState.swift */; };
+		2303234024FEBA1E00F60ABB /* WorkoutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303230B24FEBA1E00F60ABB /* WorkoutType.swift */; };
+		2303234124FEBA1E00F60ABB /* RowingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303230C24FEBA1E00F60ABB /* RowingState.swift */; };
+		2303234224FEBA1E00F60ABB /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303230D24FEBA1E00F60ABB /* BluetoothManager.swift */; };
+		2303234424FEBA1E00F60ABB /* PerformanceMonitorStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303231024FEBA1E00F60ABB /* PerformanceMonitorStore.swift */; };
+		2303234524FEBA1E00F60ABB /* RowingAdditionalStatus1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303231224FEBA1E00F60ABB /* RowingAdditionalStatus1.swift */; };
+		2303234624FEBA1E00F60ABB /* RowingGeneralStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303231324FEBA1E00F60ABB /* RowingGeneralStatus.swift */; };
+		2303234724FEBA1E00F60ABB /* RowingHeartRateBeltInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303231424FEBA1E00F60ABB /* RowingHeartRateBeltInformation.swift */; };
+		2303234824FEBA1E00F60ABB /* RowingStatusSampleRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303231524FEBA1E00F60ABB /* RowingStatusSampleRate.swift */; };
+		2303234924FEBA1E00F60ABB /* RowingAdditionalStatus2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303231624FEBA1E00F60ABB /* RowingAdditionalStatus2.swift */; };
+		2303234A24FEBA1E00F60ABB /* RowingWorkoutSummaryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303231724FEBA1E00F60ABB /* RowingWorkoutSummaryData.swift */; };
+		2303234B24FEBA1E00F60ABB /* CSAFECommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303231824FEBA1E00F60ABB /* CSAFECommand.swift */; };
+		2303234C24FEBA1E00F60ABB /* RowingAdditionalIntervalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303231924FEBA1E00F60ABB /* RowingAdditionalIntervalData.swift */; };
+		2303234D24FEBA1E00F60ABB /* RowingIntervalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303231A24FEBA1E00F60ABB /* RowingIntervalData.swift */; };
+		2303234E24FEBA1E00F60ABB /* RowingAdditionalStrokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303231B24FEBA1E00F60ABB /* RowingAdditionalStrokeData.swift */; };
+		2303234F24FEBA1E00F60ABB /* CharacteristicModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303231C24FEBA1E00F60ABB /* CharacteristicModelProtocol.swift */; };
+		2303235024FEBA1E00F60ABB /* RowingAdditionalWorkoutSummaryData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303231D24FEBA1E00F60ABB /* RowingAdditionalWorkoutSummaryData.swift */; };
+		2303235124FEBA1E00F60ABB /* RowingStrokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303231E24FEBA1E00F60ABB /* RowingStrokeData.swift */; };
+		2303235224FEBA1E00F60ABB /* C2IntervalSize+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303232024FEBA1E00F60ABB /* C2IntervalSize+Parsing.swift */; };
+		2303235324FEBA1E00F60ABB /* C2CalorieCount+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303232124FEBA1E00F60ABB /* C2CalorieCount+Parsing.swift */; };
+		2303235424FEBA1E00F60ABB /* C2DriveLength+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303232224FEBA1E00F60ABB /* C2DriveLength+Parsing.swift */; };
+		2303235524FEBA1E00F60ABB /* C2HeartRateBeltID+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303232324FEBA1E00F60ABB /* C2HeartRateBeltID+Parsing.swift */; };
+		2303235624FEBA1E00F60ABB /* C2Speed+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303232424FEBA1E00F60ABB /* C2Speed+Parsing.swift */; };
+		2303235724FEBA1E00F60ABB /* C2Power+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303232524FEBA1E00F60ABB /* C2Power+Parsing.swift */; };
+		2303235824FEBA1E00F60ABB /* C2DriveForce+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303232624FEBA1E00F60ABB /* C2DriveForce+Parsing.swift */; };
+		2303235924FEBA1E00F60ABB /* C2StrokeCount+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303232724FEBA1E00F60ABB /* C2StrokeCount+Parsing.swift */; };
+		2303235A24FEBA1E00F60ABB /* C2Pace+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303232824FEBA1E00F60ABB /* C2Pace+Parsing.swift */; };
+		2303235B24FEBA1E00F60ABB /* C2Work+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303232924FEBA1E00F60ABB /* C2Work+Parsing.swift */; };
+		2303235C24FEBA1E00F60ABB /* C2TimeInterval+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303232A24FEBA1E00F60ABB /* C2TimeInterval+Parsing.swift */; };
+		2303235D24FEBA1E00F60ABB /* C2Distance+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303232B24FEBA1E00F60ABB /* C2Distance+Parsing.swift */; };
+		2303235E24FEBA1E00F60ABB /* PerformanceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303232C24FEBA1E00F60ABB /* PerformanceMonitor.swift */; };
+		2303235F24FEBA1E00F60ABB /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303232D24FEBA1E00F60ABB /* Subject.swift */; };
+		2303236024FEBA1E00F60ABB /* CentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303232F24FEBA1E00F60ABB /* CentralManagerDelegate.swift */; };
+		2303236124FEBA1E00F60ABB /* PeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303233024FEBA1E00F60ABB /* PeripheralDelegate.swift */; };
+		2303236224FEBA1E00F60ABB /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303233124FEBA1E00F60ABB /* Types.swift */; };
+		2303236324FEBA1E00F60ABB /* RowingCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303233324FEBA1E00F60ABB /* RowingCharacteristic.swift */; };
+		2303236424FEBA1E00F60ABB /* DeviceInformationCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303233424FEBA1E00F60ABB /* DeviceInformationCharacteristic.swift */; };
+		2303236524FEBA1E00F60ABB /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303233524FEBA1E00F60ABB /* Service.swift */; };
+		2303236624FEBA1E00F60ABB /* ControlCharacteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303233624FEBA1E00F60ABB /* ControlCharacteristic.swift */; };
+		2303236724FEBA1E00F60ABB /* Characteristic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303233724FEBA1E00F60ABB /* Characteristic.swift */; };
+		2303236824FEBA1E00F60ABB /* PerformanceMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2303233824FEBA1E00F60ABB /* PerformanceMonitorViewController.swift */; };
+		2303236924FEBA1E00F60ABB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2303233924FEBA1E00F60ABB /* Main.storyboard */; };
+		2336833724FFE6F500A92917 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2336833624FFE6F500A92917 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		230322E824FEB56A00F60ABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 230322C924FEB56800F60ABB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 230322D024FEB56800F60ABB;
+			remoteInfo = Temp;
+		};
+		230322F324FEB56A00F60ABB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 230322C924FEB56800F60ABB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 230322D024FEB56800F60ABB;
+			remoteInfo = Temp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		230322D124FEB56800F60ABB /* Rower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rower.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		230322D424FEB56800F60ABB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		230322D624FEB56800F60ABB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		230322DD24FEB56A00F60ABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		230322E024FEB56A00F60ABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		230322E224FEB56A00F60ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		230322E724FEB56A00F60ABB /* RowerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RowerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		230322EB24FEB56A00F60ABB /* RowerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowerTests.swift; sourceTree = "<group>"; };
+		230322ED24FEB56A00F60ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		230322F224FEB56A00F60ABB /* RowerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RowerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		230322F624FEB56A00F60ABB /* RowerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowerUITests.swift; sourceTree = "<group>"; };
+		230322F824FEB56A00F60ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2303230624FEBA1E00F60ABB /* IntervalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntervalType.swift; sourceTree = "<group>"; };
+		2303230724FEBA1E00F60ABB /* WorkoutDurationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutDurationType.swift; sourceTree = "<group>"; };
+		2303230824FEBA1E00F60ABB /* RowingStatusSampleRateType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingStatusSampleRateType.swift; sourceTree = "<group>"; };
+		2303230924FEBA1E00F60ABB /* StrokeState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrokeState.swift; sourceTree = "<group>"; };
+		2303230A24FEBA1E00F60ABB /* WorkoutState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutState.swift; sourceTree = "<group>"; };
+		2303230B24FEBA1E00F60ABB /* WorkoutType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutType.swift; sourceTree = "<group>"; };
+		2303230C24FEBA1E00F60ABB /* RowingState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingState.swift; sourceTree = "<group>"; };
+		2303230D24FEBA1E00F60ABB /* BluetoothManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		2303231024FEBA1E00F60ABB /* PerformanceMonitorStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceMonitorStore.swift; sourceTree = "<group>"; };
+		2303231224FEBA1E00F60ABB /* RowingAdditionalStatus1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingAdditionalStatus1.swift; sourceTree = "<group>"; };
+		2303231324FEBA1E00F60ABB /* RowingGeneralStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingGeneralStatus.swift; sourceTree = "<group>"; };
+		2303231424FEBA1E00F60ABB /* RowingHeartRateBeltInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingHeartRateBeltInformation.swift; sourceTree = "<group>"; };
+		2303231524FEBA1E00F60ABB /* RowingStatusSampleRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingStatusSampleRate.swift; sourceTree = "<group>"; };
+		2303231624FEBA1E00F60ABB /* RowingAdditionalStatus2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingAdditionalStatus2.swift; sourceTree = "<group>"; };
+		2303231724FEBA1E00F60ABB /* RowingWorkoutSummaryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingWorkoutSummaryData.swift; sourceTree = "<group>"; };
+		2303231824FEBA1E00F60ABB /* CSAFECommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSAFECommand.swift; sourceTree = "<group>"; };
+		2303231924FEBA1E00F60ABB /* RowingAdditionalIntervalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingAdditionalIntervalData.swift; sourceTree = "<group>"; };
+		2303231A24FEBA1E00F60ABB /* RowingIntervalData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingIntervalData.swift; sourceTree = "<group>"; };
+		2303231B24FEBA1E00F60ABB /* RowingAdditionalStrokeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingAdditionalStrokeData.swift; sourceTree = "<group>"; };
+		2303231C24FEBA1E00F60ABB /* CharacteristicModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacteristicModelProtocol.swift; sourceTree = "<group>"; };
+		2303231D24FEBA1E00F60ABB /* RowingAdditionalWorkoutSummaryData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingAdditionalWorkoutSummaryData.swift; sourceTree = "<group>"; };
+		2303231E24FEBA1E00F60ABB /* RowingStrokeData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingStrokeData.swift; sourceTree = "<group>"; };
+		2303232024FEBA1E00F60ABB /* C2IntervalSize+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2IntervalSize+Parsing.swift"; sourceTree = "<group>"; };
+		2303232124FEBA1E00F60ABB /* C2CalorieCount+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2CalorieCount+Parsing.swift"; sourceTree = "<group>"; };
+		2303232224FEBA1E00F60ABB /* C2DriveLength+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2DriveLength+Parsing.swift"; sourceTree = "<group>"; };
+		2303232324FEBA1E00F60ABB /* C2HeartRateBeltID+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2HeartRateBeltID+Parsing.swift"; sourceTree = "<group>"; };
+		2303232424FEBA1E00F60ABB /* C2Speed+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2Speed+Parsing.swift"; sourceTree = "<group>"; };
+		2303232524FEBA1E00F60ABB /* C2Power+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2Power+Parsing.swift"; sourceTree = "<group>"; };
+		2303232624FEBA1E00F60ABB /* C2DriveForce+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2DriveForce+Parsing.swift"; sourceTree = "<group>"; };
+		2303232724FEBA1E00F60ABB /* C2StrokeCount+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2StrokeCount+Parsing.swift"; sourceTree = "<group>"; };
+		2303232824FEBA1E00F60ABB /* C2Pace+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2Pace+Parsing.swift"; sourceTree = "<group>"; };
+		2303232924FEBA1E00F60ABB /* C2Work+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2Work+Parsing.swift"; sourceTree = "<group>"; };
+		2303232A24FEBA1E00F60ABB /* C2TimeInterval+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2TimeInterval+Parsing.swift"; sourceTree = "<group>"; };
+		2303232B24FEBA1E00F60ABB /* C2Distance+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "C2Distance+Parsing.swift"; sourceTree = "<group>"; };
+		2303232C24FEBA1E00F60ABB /* PerformanceMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceMonitor.swift; sourceTree = "<group>"; };
+		2303232D24FEBA1E00F60ABB /* Subject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		2303232F24FEBA1E00F60ABB /* CentralManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CentralManagerDelegate.swift; sourceTree = "<group>"; };
+		2303233024FEBA1E00F60ABB /* PeripheralDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeripheralDelegate.swift; sourceTree = "<group>"; };
+		2303233124FEBA1E00F60ABB /* Types.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		2303233324FEBA1E00F60ABB /* RowingCharacteristic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowingCharacteristic.swift; sourceTree = "<group>"; };
+		2303233424FEBA1E00F60ABB /* DeviceInformationCharacteristic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInformationCharacteristic.swift; sourceTree = "<group>"; };
+		2303233524FEBA1E00F60ABB /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		2303233624FEBA1E00F60ABB /* ControlCharacteristic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlCharacteristic.swift; sourceTree = "<group>"; };
+		2303233724FEBA1E00F60ABB /* Characteristic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Characteristic.swift; sourceTree = "<group>"; };
+		2303233824FEBA1E00F60ABB /* PerformanceMonitorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceMonitorViewController.swift; sourceTree = "<group>"; };
+		2303233924FEBA1E00F60ABB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		2336833624FFE6F500A92917 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		230322CE24FEB56800F60ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		230322E424FEB56A00F60ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		230322EF24FEB56A00F60ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		230322C824FEB56800F60ABB = {
+			isa = PBXGroup;
+			children = (
+				230322D324FEB56800F60ABB /* Rower */,
+				230322EA24FEB56A00F60ABB /* RowerTests */,
+				230322F524FEB56A00F60ABB /* RowerUITests */,
+				230322D224FEB56800F60ABB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		230322D224FEB56800F60ABB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				230322D124FEB56800F60ABB /* Rower.app */,
+				230322E724FEB56A00F60ABB /* RowerTests.xctest */,
+				230322F224FEB56A00F60ABB /* RowerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		230322D324FEB56800F60ABB /* Rower */ = {
+			isa = PBXGroup;
+			children = (
+				2303230424FEBA1E00F60ABB /* Classes */,
+				230322D424FEB56800F60ABB /* AppDelegate.swift */,
+				230322D624FEB56800F60ABB /* SceneDelegate.swift */,
+				2336833624FFE6F500A92917 /* ViewController.swift */,
+				2303233824FEBA1E00F60ABB /* PerformanceMonitorViewController.swift */,
+				230322DD24FEB56A00F60ABB /* Assets.xcassets */,
+				2303233924FEBA1E00F60ABB /* Main.storyboard */,
+				230322DF24FEB56A00F60ABB /* LaunchScreen.storyboard */,
+				230322E224FEB56A00F60ABB /* Info.plist */,
+			);
+			path = Rower;
+			sourceTree = "<group>";
+		};
+		230322EA24FEB56A00F60ABB /* RowerTests */ = {
+			isa = PBXGroup;
+			children = (
+				230322EB24FEB56A00F60ABB /* RowerTests.swift */,
+				230322ED24FEB56A00F60ABB /* Info.plist */,
+			);
+			path = RowerTests;
+			sourceTree = "<group>";
+		};
+		230322F524FEB56A00F60ABB /* RowerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				230322F624FEB56A00F60ABB /* RowerUITests.swift */,
+				230322F824FEB56A00F60ABB /* Info.plist */,
+			);
+			path = RowerUITests;
+			sourceTree = "<group>";
+		};
+		2303230424FEBA1E00F60ABB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2303230524FEBA1E00F60ABB /* Enumerations */,
+				2303230F24FEBA1E00F60ABB /* Stores */,
+				2303232E24FEBA1E00F60ABB /* Delegates */,
+				2303231124FEBA1E00F60ABB /* Models */,
+				2303233224FEBA1E00F60ABB /* Services */,
+				2303231F24FEBA1E00F60ABB /* Extensions */,
+				2303232C24FEBA1E00F60ABB /* PerformanceMonitor.swift */,
+				2303230D24FEBA1E00F60ABB /* BluetoothManager.swift */,
+				2303232D24FEBA1E00F60ABB /* Subject.swift */,
+				2303233124FEBA1E00F60ABB /* Types.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2303230524FEBA1E00F60ABB /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				2303230624FEBA1E00F60ABB /* IntervalType.swift */,
+				2303230724FEBA1E00F60ABB /* WorkoutDurationType.swift */,
+				2303230824FEBA1E00F60ABB /* RowingStatusSampleRateType.swift */,
+				2303230924FEBA1E00F60ABB /* StrokeState.swift */,
+				2303230A24FEBA1E00F60ABB /* WorkoutState.swift */,
+				2303230B24FEBA1E00F60ABB /* WorkoutType.swift */,
+				2303230C24FEBA1E00F60ABB /* RowingState.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		2303230F24FEBA1E00F60ABB /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				2303231024FEBA1E00F60ABB /* PerformanceMonitorStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		2303231124FEBA1E00F60ABB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2303231224FEBA1E00F60ABB /* RowingAdditionalStatus1.swift */,
+				2303231324FEBA1E00F60ABB /* RowingGeneralStatus.swift */,
+				2303231424FEBA1E00F60ABB /* RowingHeartRateBeltInformation.swift */,
+				2303231524FEBA1E00F60ABB /* RowingStatusSampleRate.swift */,
+				2303231624FEBA1E00F60ABB /* RowingAdditionalStatus2.swift */,
+				2303231724FEBA1E00F60ABB /* RowingWorkoutSummaryData.swift */,
+				2303231824FEBA1E00F60ABB /* CSAFECommand.swift */,
+				2303231924FEBA1E00F60ABB /* RowingAdditionalIntervalData.swift */,
+				2303231A24FEBA1E00F60ABB /* RowingIntervalData.swift */,
+				2303231B24FEBA1E00F60ABB /* RowingAdditionalStrokeData.swift */,
+				2303231C24FEBA1E00F60ABB /* CharacteristicModelProtocol.swift */,
+				2303231D24FEBA1E00F60ABB /* RowingAdditionalWorkoutSummaryData.swift */,
+				2303231E24FEBA1E00F60ABB /* RowingStrokeData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2303231F24FEBA1E00F60ABB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2303232024FEBA1E00F60ABB /* C2IntervalSize+Parsing.swift */,
+				2303232124FEBA1E00F60ABB /* C2CalorieCount+Parsing.swift */,
+				2303232224FEBA1E00F60ABB /* C2DriveLength+Parsing.swift */,
+				2303232324FEBA1E00F60ABB /* C2HeartRateBeltID+Parsing.swift */,
+				2303232424FEBA1E00F60ABB /* C2Speed+Parsing.swift */,
+				2303232524FEBA1E00F60ABB /* C2Power+Parsing.swift */,
+				2303232624FEBA1E00F60ABB /* C2DriveForce+Parsing.swift */,
+				2303232724FEBA1E00F60ABB /* C2StrokeCount+Parsing.swift */,
+				2303232824FEBA1E00F60ABB /* C2Pace+Parsing.swift */,
+				2303232924FEBA1E00F60ABB /* C2Work+Parsing.swift */,
+				2303232A24FEBA1E00F60ABB /* C2TimeInterval+Parsing.swift */,
+				2303232B24FEBA1E00F60ABB /* C2Distance+Parsing.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2303232E24FEBA1E00F60ABB /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				2303232F24FEBA1E00F60ABB /* CentralManagerDelegate.swift */,
+				2303233024FEBA1E00F60ABB /* PeripheralDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		2303233224FEBA1E00F60ABB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2303233324FEBA1E00F60ABB /* RowingCharacteristic.swift */,
+				2303233424FEBA1E00F60ABB /* DeviceInformationCharacteristic.swift */,
+				2303233524FEBA1E00F60ABB /* Service.swift */,
+				2303233624FEBA1E00F60ABB /* ControlCharacteristic.swift */,
+				2303233724FEBA1E00F60ABB /* Characteristic.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		230322D024FEB56800F60ABB /* Rower */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 230322FB24FEB56B00F60ABB /* Build configuration list for PBXNativeTarget "Rower" */;
+			buildPhases = (
+				230322CD24FEB56800F60ABB /* Sources */,
+				230322CE24FEB56800F60ABB /* Frameworks */,
+				230322CF24FEB56800F60ABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rower;
+			productName = Temp;
+			productReference = 230322D124FEB56800F60ABB /* Rower.app */;
+			productType = "com.apple.product-type.application";
+		};
+		230322E624FEB56A00F60ABB /* RowerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 230322FE24FEB56B00F60ABB /* Build configuration list for PBXNativeTarget "RowerTests" */;
+			buildPhases = (
+				230322E324FEB56A00F60ABB /* Sources */,
+				230322E424FEB56A00F60ABB /* Frameworks */,
+				230322E524FEB56A00F60ABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				230322E924FEB56A00F60ABB /* PBXTargetDependency */,
+			);
+			name = RowerTests;
+			productName = TempTests;
+			productReference = 230322E724FEB56A00F60ABB /* RowerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		230322F124FEB56A00F60ABB /* RowerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2303230124FEB56B00F60ABB /* Build configuration list for PBXNativeTarget "RowerUITests" */;
+			buildPhases = (
+				230322EE24FEB56A00F60ABB /* Sources */,
+				230322EF24FEB56A00F60ABB /* Frameworks */,
+				230322F024FEB56A00F60ABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				230322F424FEB56A00F60ABB /* PBXTargetDependency */,
+			);
+			name = RowerUITests;
+			productName = TempUITests;
+			productReference = 230322F224FEB56A00F60ABB /* RowerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		230322C924FEB56800F60ABB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = "Aschmann, Paul";
+				TargetAttributes = {
+					230322D024FEB56800F60ABB = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					230322E624FEB56A00F60ABB = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 230322D024FEB56800F60ABB;
+					};
+					230322F124FEB56A00F60ABB = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 230322D024FEB56800F60ABB;
+					};
+				};
+			};
+			buildConfigurationList = 230322CC24FEB56800F60ABB /* Build configuration list for PBXProject "Rower" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 230322C824FEB56800F60ABB;
+			productRefGroup = 230322D224FEB56800F60ABB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				230322D024FEB56800F60ABB /* Rower */,
+				230322E624FEB56A00F60ABB /* RowerTests */,
+				230322F124FEB56A00F60ABB /* RowerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		230322CF24FEB56800F60ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230322E124FEB56A00F60ABB /* LaunchScreen.storyboard in Resources */,
+				2303236924FEBA1E00F60ABB /* Main.storyboard in Resources */,
+				230322DE24FEB56A00F60ABB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		230322E524FEB56A00F60ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		230322F024FEB56A00F60ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		230322CD24FEB56800F60ABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2303234524FEBA1E00F60ABB /* RowingAdditionalStatus1.swift in Sources */,
+				2303235F24FEBA1E00F60ABB /* Subject.swift in Sources */,
+				2303235E24FEBA1E00F60ABB /* PerformanceMonitor.swift in Sources */,
+				2303236424FEBA1E00F60ABB /* DeviceInformationCharacteristic.swift in Sources */,
+				2303236224FEBA1E00F60ABB /* Types.swift in Sources */,
+				2303233D24FEBA1E00F60ABB /* RowingStatusSampleRateType.swift in Sources */,
+				2303235A24FEBA1E00F60ABB /* C2Pace+Parsing.swift in Sources */,
+				2303233F24FEBA1E00F60ABB /* WorkoutState.swift in Sources */,
+				2303235724FEBA1E00F60ABB /* C2Power+Parsing.swift in Sources */,
+				2303234D24FEBA1E00F60ABB /* RowingIntervalData.swift in Sources */,
+				2303233B24FEBA1E00F60ABB /* IntervalType.swift in Sources */,
+				2303234A24FEBA1E00F60ABB /* RowingWorkoutSummaryData.swift in Sources */,
+				2303234624FEBA1E00F60ABB /* RowingGeneralStatus.swift in Sources */,
+				2303235B24FEBA1E00F60ABB /* C2Work+Parsing.swift in Sources */,
+				2303233C24FEBA1E00F60ABB /* WorkoutDurationType.swift in Sources */,
+				2303236024FEBA1E00F60ABB /* CentralManagerDelegate.swift in Sources */,
+				2303235D24FEBA1E00F60ABB /* C2Distance+Parsing.swift in Sources */,
+				2303234F24FEBA1E00F60ABB /* CharacteristicModelProtocol.swift in Sources */,
+				2303235924FEBA1E00F60ABB /* C2StrokeCount+Parsing.swift in Sources */,
+				2303235524FEBA1E00F60ABB /* C2HeartRateBeltID+Parsing.swift in Sources */,
+				2303234B24FEBA1E00F60ABB /* CSAFECommand.swift in Sources */,
+				2303235124FEBA1E00F60ABB /* RowingStrokeData.swift in Sources */,
+				2303236724FEBA1E00F60ABB /* Characteristic.swift in Sources */,
+				230322D524FEB56800F60ABB /* AppDelegate.swift in Sources */,
+				230322D724FEB56800F60ABB /* SceneDelegate.swift in Sources */,
+				2303235C24FEBA1E00F60ABB /* C2TimeInterval+Parsing.swift in Sources */,
+				2303234C24FEBA1E00F60ABB /* RowingAdditionalIntervalData.swift in Sources */,
+				2303235324FEBA1E00F60ABB /* C2CalorieCount+Parsing.swift in Sources */,
+				2303235824FEBA1E00F60ABB /* C2DriveForce+Parsing.swift in Sources */,
+				2303236324FEBA1E00F60ABB /* RowingCharacteristic.swift in Sources */,
+				2336833724FFE6F500A92917 /* ViewController.swift in Sources */,
+				2303236624FEBA1E00F60ABB /* ControlCharacteristic.swift in Sources */,
+				2303234224FEBA1E00F60ABB /* BluetoothManager.swift in Sources */,
+				2303234024FEBA1E00F60ABB /* WorkoutType.swift in Sources */,
+				2303236524FEBA1E00F60ABB /* Service.swift in Sources */,
+				2303235424FEBA1E00F60ABB /* C2DriveLength+Parsing.swift in Sources */,
+				2303233E24FEBA1E00F60ABB /* StrokeState.swift in Sources */,
+				2303234124FEBA1E00F60ABB /* RowingState.swift in Sources */,
+				2303234724FEBA1E00F60ABB /* RowingHeartRateBeltInformation.swift in Sources */,
+				2303235624FEBA1E00F60ABB /* C2Speed+Parsing.swift in Sources */,
+				2303234E24FEBA1E00F60ABB /* RowingAdditionalStrokeData.swift in Sources */,
+				2303235224FEBA1E00F60ABB /* C2IntervalSize+Parsing.swift in Sources */,
+				2303236824FEBA1E00F60ABB /* PerformanceMonitorViewController.swift in Sources */,
+				2303236124FEBA1E00F60ABB /* PeripheralDelegate.swift in Sources */,
+				2303234424FEBA1E00F60ABB /* PerformanceMonitorStore.swift in Sources */,
+				2303235024FEBA1E00F60ABB /* RowingAdditionalWorkoutSummaryData.swift in Sources */,
+				2303234824FEBA1E00F60ABB /* RowingStatusSampleRate.swift in Sources */,
+				2303234924FEBA1E00F60ABB /* RowingAdditionalStatus2.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		230322E324FEB56A00F60ABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230322EC24FEB56A00F60ABB /* RowerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		230322EE24FEB56A00F60ABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				230322F724FEB56A00F60ABB /* RowerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		230322E924FEB56A00F60ABB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 230322D024FEB56800F60ABB /* Rower */;
+			targetProxy = 230322E824FEB56A00F60ABB /* PBXContainerItemProxy */;
+		};
+		230322F424FEB56A00F60ABB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 230322D024FEB56800F60ABB /* Rower */;
+			targetProxy = 230322F324FEB56A00F60ABB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		230322DF24FEB56A00F60ABB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				230322E024FEB56A00F60ABB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		230322F924FEB56B00F60ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		230322FA24FEB56B00F60ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		230322FC24FEB56B00F60ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TP87G223KK;
+				INFOPLIST_FILE = Rower/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lilabs.rower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		230322FD24FEB56B00F60ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TP87G223KK;
+				INFOPLIST_FILE = Rower/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lilabs.rower;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		230322FF24FEB56B00F60ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TP87G223KK;
+				INFOPLIST_FILE = RowerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lilabs.rower.RowerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rower.app/Rower";
+			};
+			name = Debug;
+		};
+		2303230024FEB56B00F60ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TP87G223KK;
+				INFOPLIST_FILE = RowerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lilabs.rower.RowerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rower.app/Rower";
+			};
+			name = Release;
+		};
+		2303230224FEB56B00F60ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TP87G223KK;
+				INFOPLIST_FILE = RowerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lilabs.rower.RowerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rower;
+			};
+			name = Debug;
+		};
+		2303230324FEB56B00F60ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TP87G223KK;
+				INFOPLIST_FILE = RowerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lilabs.rower.RowerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Rower;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		230322CC24FEB56800F60ABB /* Build configuration list for PBXProject "Rower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				230322F924FEB56B00F60ABB /* Debug */,
+				230322FA24FEB56B00F60ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		230322FB24FEB56B00F60ABB /* Build configuration list for PBXNativeTarget "Rower" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				230322FC24FEB56B00F60ABB /* Debug */,
+				230322FD24FEB56B00F60ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		230322FE24FEB56B00F60ABB /* Build configuration list for PBXNativeTarget "RowerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				230322FF24FEB56B00F60ABB /* Debug */,
+				2303230024FEB56B00F60ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2303230124FEB56B00F60ABB /* Build configuration list for PBXNativeTarget "RowerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2303230224FEB56B00F60ABB /* Debug */,
+				2303230324FEB56B00F60ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 230322C924FEB56800F60ABB /* Project object */;
+}
